@@ -55,7 +55,7 @@ def submit_guess():
     attempts += 1
 
     if attempts == max_attempts:
-        status_label.config(text==f"game over. word was {secret_word}")
+        status_label.config(text=f"game over. word was {secret_word}")
         guess_entry.config(state="disabled")
 
     guess_entry.delete(0, tk.END)
